@@ -25,7 +25,7 @@ DEVICE_PACKAGE_OVERLAYS := device/lge/mako/overlay
 # currently contain all of the bitmaps at xhdpi density so
 # we do this little trick to fall back to the hdpi version
 # if the xhdpi doesn't exist.
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
@@ -40,16 +40,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     charger_res_images
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-ifeq ($(USE_SVELTE_KERNEL),true)
-LOCAL_KERNEL := device/lge/mako_svelte-kernel/kernel
-else
-LOCAL_KERNEL := device/lge/mako-kernel/kernel
-endif
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
 
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
@@ -288,7 +278,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 	
 PRODUCT_PROPERTY_OVERRIDES += \
-        dalvik.vm.dex2oat-swap=false
+    dalvik.vm.dex2oat-swap=false \
+    dalvik.vm.dex2oat-threads=2 \
+    dalvik.vm.image-dex2oat-threads=4 \
+    dalvik.vm.heapminfree=2m
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
