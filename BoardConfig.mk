@@ -82,9 +82,9 @@ TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
 TARGET_USES_C2D_COMPOSITON := true
 
-WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
-WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
+
+# Disable dex-preoptimization
+WITH_DEXPREOPT := false
 
 TARGET_RECOVERY_FSTAB = device/lge/mako/fstab.mako
 TARGET_USERIMAGES_USE_EXT4 := true
