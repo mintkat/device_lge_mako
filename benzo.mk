@@ -6,6 +6,7 @@ $(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/benzo/config/common.mk)
+$(call inherit-product, vendor/benzo/config/common_full_phone.mk) 
 
 # Setup device specific product configuration.
 PRODUCT_NAME := benzo_mako
