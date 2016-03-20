@@ -263,11 +263,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 	
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false
-    dalvik.vm.dex2oat-threads=2 \
-    dalvik.vm.image-dex2oat-threads=4 \
-    dalvik.vm.heapminfree=2m
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
