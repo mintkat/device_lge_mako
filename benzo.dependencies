@@ -1,0 +1,15 @@
+
+[
+ {
+   "remote":      "github",
+   "repository":  "mintkat/MintMallow_Kernel",
+   "target_path": "kernel/lge/mako",
+   "revision":    "mintkat"
+ },
+ {
+   "remote":      "github",
+   "repository":  "UBERMALLOW/vendor_lge_minimal",
+   "target_path": "vendor/lge",
+   "revision":    "master"
+ }
+]
