@@ -22,21 +22,11 @@ TARGET_CPU_VARIANT := krait
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 TARGET_USE_KRAIT_PLD_SET := true
 
+TARGET_NO_BOOTLOADER := true
+
 # Kernel inline build
 TARGET_KERNEL_SOURCE := kernel/lge/mako
 TARGET_KERNEL_CONFIG := mako_defconfig
-TARGET_GCC_VERSION_ARM := 5.3
-
-#Optimize-it!!
-STRICT_ALIASING := true
-KRAIT_TUNINGS := true
-ENABLE_GCCONLY := true
-GRAPHITE_OPTS := true
-CLANG_O3 := true
-ENABLE_GCCONLY := true
-USE_O3_OPTIMIZATIONS := true
-
-TARGET_NO_BOOTLOADER := true
 
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -83,7 +73,6 @@ TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
 TARGET_USES_C2D_COMPOSITON := true
 
-
 # Disable dex-preoptimization
 WITH_DEXPREOPT := false
 
@@ -121,8 +110,6 @@ USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 HAVE_ADRENO_SOURCE:= false
-
-#USE_CLANG_PLATFORM_BUILD := true
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
