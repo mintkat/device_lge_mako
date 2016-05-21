@@ -7,7 +7,7 @@
  },
  {
    "remote":      "github",
-   "repository":  "TeamExodus/proprietary_vendor_lge",
+   "repository":  "TeamExodus/vendor_lge_mako",
    "target_path": "vendor/lge",
    "revision":    "EXODUS-6.0"
  },
