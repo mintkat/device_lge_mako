@@ -24,9 +24,11 @@ TARGET_USE_KRAIT_PLD_SET := true
 
 TARGET_NO_BOOTLOADER := true
 
-# Kernel inline build
+# Inline kernel building
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-$(TARGET_GCC_VERSION_KERNEL)/bin
 TARGET_KERNEL_SOURCE := kernel/lge/mako
 TARGET_KERNEL_CONFIG := mako_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
