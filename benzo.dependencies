@@ -2,14 +2,19 @@
 [
  {
    "remote":      "github",
-   "repository":  "mintkat/MintMallow_Kernel",
+   "repository":  "txuki2005/TaUrUs_Kernel",
    "target_path": "kernel/lge/mako",
-   "revision":    "mintkat"
+   "revision":    "Taurus-Mallow"
  },
  {
    "remote":      "github",
-   "repository":  "UBERMALLOW/vendor_lge_minimal",
+   "repository":  "TeamExodus/proprietary_vendor_lge",
    "target_path": "vendor/lge",
-   "revision":    "master"
+   "revision":    "EXODUS-6.0"
  }
+ {
+   "remote":      "github",
+   "repository":  "external_stlport",
+   "target_path": "external/stlport",
+   "revision":    "EXODUS-6.0"
 ]

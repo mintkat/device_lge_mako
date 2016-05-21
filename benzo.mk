@@ -17,8 +17,8 @@ PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=occam \
-    BUILD_FINGERPRINT=google/occam/mako:6.0.1/MMB29V/2473553:user/release-keys \
-    PRIVATE_BUILD_DESC="occam-user 6.0.1 MMB29V 2473553 release-keys"
+    BUILD_FINGERPRINT=google/occam/mako:6.0.1/MOB30D/2704746:user/release-keys \
+    PRIVATE_BUILD_DESC="occam-user 6.0.1 MOB30D 2704746 release-keys"
 
 # Copy device specific prebuilt files.
 PRODUCT_COPY_FILES += \
