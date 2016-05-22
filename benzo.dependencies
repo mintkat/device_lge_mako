@@ -7,9 +7,9 @@
  },
  {
    "remote":      "github",
-   "repository":  "TeamExodus/vendor_lge_mako",
+   "repository":  "UBERMALLOW/vendor_lge_minimal",
    "target_path": "vendor/lge",
-   "revision":    "EXODUS-6.0"
+   "revision":    "master"
  },
  {
    "remote":      "github",
